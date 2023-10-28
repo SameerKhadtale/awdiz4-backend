@@ -1,11 +1,15 @@
 // console.log("Hi from index.js backend")
 
 import express from 'express'
+import { Hello } from './Controllers/GlobalControllers.js'
 
 const app = express()
 
-app get("/" function (req,res){
-res.send("Hello All..")
+app.get("/",function (req,res){
+res.send("Hello Everyone..")
 })
 
-app.listen(8000)
+
+app.get("/hello", Hello);    
+
+app.listen(8000,()=>console.log("App is running on port 8000."))
