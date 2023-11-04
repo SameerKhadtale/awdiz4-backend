@@ -5,4 +5,16 @@ Step 4 : package.json > "type" : "module"
 Step 5 : index.js , import express, create an instance of it, const app = express();
 Step 6 : create api's, app.get("/hello", hello)
 Step 7 : connect MongoDB ....(pending)
-Step 8 : 
+
+
+MongoDB connection
+Step 1 : npm i mongoose
+Step 2 : import mongoose from 'mongoose'
+Step 3 : mongoose.connect('yoururl').then(()=> console.log("Database Connected"))
+Step 4 : Create Data Modals
+
+.ENV connection
+Step 1 : npm i dotenv
+Step 2 : impoert dotenv from dotenv
+Step 3 : after app, dotenv.config();
+Step 4 : now access any variables in any files with any variable name
