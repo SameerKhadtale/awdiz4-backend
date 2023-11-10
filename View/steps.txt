@@ -18,3 +18,14 @@ Step 1 : npm i dotenv
 Step 2 : impoert dotenv from dotenv
 Step 3 : after app, dotenv.config();
 Step 4 : now access any variables in any files with any variable name
+
+Logger reports
+Step 1 : npm i morgan
+Step 2 : import morgan from morgan
+Step 3 : app.use(morgan('dev'))
+
+
+Cors connection
+Step 1 : npm i cors
+Step 2 : import cors from cors
+Step 3 : app.use(cors());
