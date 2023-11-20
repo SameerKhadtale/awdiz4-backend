@@ -16,7 +16,7 @@
 //     res.send("HII")
 // }
 
-import UserModal from "../Modals/User.modal.js";
+import UserModal from "./Modals/User.modals.js";
 // import bcrypt from 'bcrypt';
 
 export const Login = (req, res) => {
