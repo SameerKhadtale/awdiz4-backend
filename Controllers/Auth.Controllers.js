@@ -16,7 +16,7 @@
 //     res.send("HII")
 // }
 
-import UserModal from "../Modals/User.modals";
+import UserModal from "../Modals/User.modal.js";
 // import bcrypt from 'bcrypt';
 
 export const Login = (req, res) => {
@@ -25,12 +25,16 @@ export const Login = (req, res) => {
 
 export const Register = async (req, res) => {
     try {
-        console.log(req.body, "req.body")
-        // const { name, email, password } = req.body;
+        // console.log(req.body, "req.body")
+        const { name, email, password } = req.body;
+        // console.log(name, email, password,"add data")
         //console.log(req.body,"req.body") //console.log(number, typeof number)//console.log(req.body,"add data")
-        // if (!name || !email || !password || !number) return res.status(401).json({ success: false, message: "All fields are mandatory" })
-        // const user = new UserModal({
-        //     name, email, password
+        if (!name || !email || !password || !number) return res.status(401).json
+        ({ success: false, message: "All fields are mandatory" })
+        const user = new UserModal({
+            name, email, password})
+            await user.save();
+    
         return res.status(200).json({ success: true, message: "Registration Successful.." })
         // const hashedPassword = bcrypt.hash(password, 10);// console.log(hashedPassword, "hashedPassword")// await user.save();
 

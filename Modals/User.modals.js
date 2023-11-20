@@ -7,4 +7,4 @@ password : String,
 number : Number
 })
 
-export default mongoose.modal("User", user);
+export default mongoose.model("User", user);
