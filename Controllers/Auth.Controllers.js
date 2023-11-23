@@ -5,24 +5,37 @@ export const Login = (req, res) => {
     res.send("Hi from login Hiiii")
 }
 
-export const Register = async (req, res) => {
-    try {
-        const { name, email, password } = req.body;
-        if (!name || !email || !password || !number) return res.status(401).json
-        ({ success: false, message: "All fields are mandatory" })
-        const user = new UserModal({
-            name, email, password})
-            await user.save();
-    
-        return res.status(200).json({ success: true, message: "Registration Successful.." })
-        
-    } catch (error) {
-        return res.status(500).json({ success: false, message: error })
-    }
+export const Register = (req, res) => {
+    res.send("Hi from register")
 }
+
 export const getCurrentUser = (req, res) => {
     res.send("HIII")
 }
+
+// // export const Register = async (req, res) => {
+// //     try {
+// //         const { name, email, password } = req.body;
+// //         if (!name || !email || !password || !number) return res.status(401).json
+// //         ({ success: false, message: "All fields are mandatory" })
+// //         const user = new UserModal({
+// //             name, email, password})
+// //             await user.save();
+    
+// //         return res.status(200).json({ success: true, message: "Registration Successful.." })
+        
+// //     } catch (error) {
+// //         return res.status(500).json({ success: false, message: error })
+// //     }
+// // }
+
+
+
+
+
+
+
+
 // console.log(name, email, password,"add data")
 //console.log(req.body,"req.body") //console.log(number, typeof number)//console.log(req.body,"add data")
 // console.log(req.body, "req.body")
