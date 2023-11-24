@@ -4,7 +4,7 @@ const user = new Schema({
 username : String,
 useremail : String,
 password : String,
-number : Number
+number : Number,
 })
 
-export default mongoose.model("User", user);
+export default mongoose.model("Users", user);
