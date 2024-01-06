@@ -38,7 +38,7 @@ export const addProduct = async (req, res) => {
         // console.log(product, "- product here")
         await product.save();
         // console.log(ress, "response from mongodb")
-        return res.status(201).json({ success: true, message: "Product successfully added." })
+        return res.status(201).json({ success: true, message: "Product added.." })
     } catch (error) {
         console.log(error, "error here")
         return res.status(500).json({ success: false, message: error })

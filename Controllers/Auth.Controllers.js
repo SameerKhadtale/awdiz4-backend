@@ -106,12 +106,6 @@ export const getCurrentUser = async (req, res) => {
 // // }
 
 
-
-
-
-
-
-
 // console.log(name, email, password,"add data")
 //console.log(req.body,"req.body") //console.log(number, typeof number)//console.log(req.body,"add data")
 // console.log(req.body, "req.body")
