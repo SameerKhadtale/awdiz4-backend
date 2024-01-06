@@ -11,6 +11,9 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(express.json());
 
+app.get('/' , (req, res) => {
+    res.send("Welcome to Sameer's Backend server")
+})
 app.use("/api/v1", router)
 
 mongoose.connect(process.env.MONGOURL).then(()=>console.log("Database Connected.."))

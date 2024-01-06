@@ -31,7 +31,7 @@ export const Login = async (req, res) => {
 export const Register = async (req, res) => {
     try {
         // console.log(req.body, "req.body")
-        const { name, email, password } = req.body;
+        const { name, email, password } = req.body.userData;
         // console.log(number, typeof number)
         // console.log(name, email, password, "add data")
         if (!name || !email || !password) return res.status(401).json({ success: false, message: "All fields are mandtory." })
