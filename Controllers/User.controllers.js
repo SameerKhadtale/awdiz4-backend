@@ -8,9 +8,9 @@ export const addCart = async (req, res) => {
         await UserModal.findByIdAndUpdate(userId, { $push: { cart: productId } })
         return res.status(201).json({ success: true, message: "Product added to cart successfully." })
     } catch (error) {
+    }
         return res.status(500).json({ success: false, message: error })
     }
-}
 
 
 export const Cart = async (req, res) => {

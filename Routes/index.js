@@ -11,7 +11,7 @@ const router = Router();
 router.use("/auth", authRoutes) // 8000 - backend-auth
 router.use("/product", productRoutes)  // 8001 backend-product
 router.use("/user", userRoutes) // // 8002 backend-user
-// router.use("/cart", productRoutes)
+router.use("/cart", productRoutes)
 // router.use("/product", productRoutes)
 // router.use("/product", productRoutes)
 // router.use("/product", productRoutes)

@@ -4,8 +4,6 @@ import axios from 'axios';
 
 const router = Router();
 
-
-
 router.put('/put-update-user/:id', putUpdateUser) // when we want to replace user data 
 router.patch('/patch-update-user/:id', patchUpdateUser) // when we want to update/modify user data
 router.get('/get-testing/:id', getTesting)

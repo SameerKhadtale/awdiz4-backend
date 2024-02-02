@@ -112,9 +112,10 @@ export const updateProduct = async (req, res) => {
 export const deleteProduct = async (req, res) => {
     try {
         const { id } = req.query;
+        console.log(id)
         if (!id) return res.status(404).json({ message: "Id not found." })
 
-        await ProductModal.findByIdAndRemove(id)
+        await ProductModal.findByIdAndDelete(id)
         return res.status(200).json({ success: true, message: "Product deleted successfully." })
 
 
